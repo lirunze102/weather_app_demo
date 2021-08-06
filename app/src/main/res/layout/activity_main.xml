@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapActivity">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/to_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:clickable="true"
+        android:src="@drawable/city_1"
+        app:backgroundTintMode="screen"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:hoveredFocusedTranslationZ="18dp"
+        app:pressedTranslationZ="18dp"
+        app:rippleColor="@color/blue" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_auto_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:clickable="true"
+        android:src="@mipmap/icon_auto_location"
+        app:backgroundTintMode="screen"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:hoveredFocusedTranslationZ="18dp"
+        app:pressedTranslationZ="18dp"
+        app:rippleColor="@color/blue" />
+</FrameLayout>
+
